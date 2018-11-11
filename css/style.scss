@@ -1,0 +1,90 @@
+@font-face {
+  font-family: punishment;
+  src: url("../font/Punishment.otf");
+}
+
+@font-face {
+  font-family: poly;
+  src: url("../font/Poly-Regular.otf");
+}
+
+@font-face {
+  font-family: poly-italic;
+  src: url("../font/Poly-Italic.otf");
+}
+
+$header-height: 87px;
+$navdark: black;
+$dark: lighten(black, 10%);
+$writeColor: white;
+$defaultFontSize: 1.5rem;
+$navBarFontSize: 2.3rem;
+
+h1 {
+  margin: 1rem auto;
+}
+
+h1, h2, h3 {
+  font-family: punishment;
+}
+
+.my-bg-dark {
+  background-color: $dark;
+}
+
+.btn-order {
+  background-color: #959595;
+  border-color: #959595;
+  color: #fff;
+  background: linear-gradient(to bottom, #959595 0%, #0d0d0d 18%, #010101 50%, #0a0a0a 58%, #383838 81%, #4e4e4e 94%, #1b1b1b 100%);
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  &:hover {
+    filter: invert(100%);
+  }
+}
+
+.shadow-white {
+  box-shadow: 0 .5rem 1rem black;
+}
+
+body {
+  background: url("../image/background.webp") no-repeat center center fixed;
+  font-family: poly;
+  font-size: $defaultFontSize;
+
+  .italic {
+    font-family: poly-italic;
+  }
+}
+
+header {
+  height: $header-height;
+
+  .navbar {
+    font-family: punishment;
+    background-color: $navdark;
+    background-size: cover;
+    font-size: $navBarFontSize;
+  }
+
+  .dropdown-menu {
+    font-size: round($navBarFontSize * 0.7);
+    background-color: $dark;
+    .dropdown-item {
+      color: $writeColor;
+      &:hover, &:focus {
+        background-color: lighten($dark, 20%);
+      }
+    }
+  }
+}
+
+section {
+  color: $writeColor;
+}
+
+footer {
+  background-color: $navdark;
+
+}

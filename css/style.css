@@ -1,0 +1,60 @@
+@font-face {
+  font-family: punishment;
+  src: url("../font/Punishment.otf"); }
+@font-face {
+  font-family: poly;
+  src: url("../font/Poly-Regular.otf"); }
+@font-face {
+  font-family: poly-italic;
+  src: url("../font/Poly-Italic.otf"); }
+h1 {
+  margin: 1rem auto; }
+
+h1, h2, h3 {
+  font-family: punishment; }
+
+.my-bg-dark {
+  background-color: #1a1a1a; }
+
+.btn-order {
+  background-color: #959595;
+  border-color: #959595;
+  color: #fff;
+  background: linear-gradient(to bottom, #959595 0%, #0d0d0d 18%, #010101 50%, #0a0a0a 58%, #383838 81%, #4e4e4e 94%, #1b1b1b 100%);
+  font-size: 1.5rem;
+  padding: 10px 30px; }
+  .btn-order:hover {
+    filter: invert(100%); }
+
+.shadow-white {
+  box-shadow: 0 .5rem 1rem black; }
+
+body {
+  background: url("../image/background.webp") no-repeat center center fixed;
+  font-family: poly;
+  font-size: 1.5rem; }
+  body .italic {
+    font-family: poly-italic; }
+
+header {
+  height: 87px; }
+  header .navbar {
+    font-family: punishment;
+    background-color: black;
+    background-size: cover;
+    font-size: 2.3rem; }
+  header .dropdown-menu {
+    font-size: 2rem;
+    background-color: #1a1a1a; }
+    header .dropdown-menu .dropdown-item {
+      color: white; }
+      header .dropdown-menu .dropdown-item:hover, header .dropdown-menu .dropdown-item:focus {
+        background-color: #4d4d4d; }
+
+section {
+  color: white; }
+
+footer {
+  background-color: black; }
+
+/*# sourceMappingURL=style.css.map */
