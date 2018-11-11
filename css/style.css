@@ -53,6 +53,9 @@ header {
 
 section {
   color: white; }
+  section .album {
+    width: 100%;
+    max-width: 500px; }
 
 footer {
   background-color: black; }
